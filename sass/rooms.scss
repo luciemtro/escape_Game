@@ -1,0 +1,332 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#rooms_header{
+
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)),url("images/gallery/slide-1.jpg");
+  background-position: 50% 21%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 510px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1{
+    font-size: $h1Desktop;
+    font-family: $headings;
+    color: $white_background;
+    span{
+      color: $red;
+    }
+  }
+
+  p{
+    color: $white_background;
+    font-family: $headings ;
+    font-size: $pDesktop;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .grey{
+      color: #3C3F3E;
+    }
+    .headerSize{
+      font-size: $h2Dekstop ;
+      top: -4px;
+      position: relative;
+      margin: 5px;
+    }
+  }
+}
+
+
+#rooms_body{
+  background-color: $dark_background;
+  font-family: $paragraphs;
+  #rooms_Tris{
+    display: flex;
+    justify-content: center;
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    #all-box + label div,
+    #easy-box + label div,
+    #normal-box + label div,
+    #hard-box + label div {
+      color: $white_background;
+      border: 2px #3C3F3E solid;
+      padding: 10px 35px 10px 35px;
+      border-radius: 50px;
+      margin: 150px 10px 15px 10px;
+      transition: background-color 0.5s , border 0.5s;
+      &:hover{
+        background-color: #3C3F3E;
+        cursor: pointer;
+      }
+    }
+
+    #all-box:checked + label div,
+    #easy-box:checked + label div,
+    #normal-box:checked + label div,
+    #hard-box:checked + label div {
+      background-color: blue;
+      border: 2px red solid;
+      &:hover{
+        background-color: red;
+      }
+    }
+
+    //#all-box ~ .room_card:has(.all),
+    //#easy-box ~ .room_card:has(.easy),
+    //#normal-box ~ .room_card:has(.normal),
+    //#hard-box ~ .room_card:has(.hard)
+    //{
+    //  display: none;
+    //}
+    //
+    //#all-box:checked ~ .room_card:has(.all),
+    //#easy-box:checked ~ .room_card:has(.easy),
+    //#normal-box:checked ~ .room_card:has(.normal),
+    //#hard-box:checked ~ .room_card:has(.hard)
+    //{
+    //  display: initial;
+    //}
+
+  }
+
+  #rooms_rooms{
+    margin-top: 60px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 210px 210px 210px 210px;
+    grid-row-gap: 5%;
+    grid-column-gap: 5%;
+    color: $white_background;
+    justify-content: center;
+    .room_card{
+      align-self: center;
+      justify-self: center;
+      height: 375px;
+      min-width: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 35px;
+      box-shadow: 0 0 1em black;
+      &:hover{
+        background-size: 250% !important;
+        cursor: pointer;
+      }
+
+      .room_card_difficulty{
+        margin-top: 70%;
+        margin-bottom: 15px;
+        i{
+          color: #3C3F3E;
+          margin: 2.5px;
+          text-shadow: #1B1B1B 1px 1px;
+        }
+      }
+
+      .room_card_name{
+
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+
+      }
+
+      .room_card_infos{
+        display: flex;
+        div{
+          display: flex;
+          i{
+            margin-right: 11px;
+            position: relative;
+            top: 4px;
+          }
+          p{
+            margin-right: 15px;
+            color: #3C3F3E;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+
+  #rooms_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 160px;
+    color: $white_background;
+    a{
+      text-align: center;
+      width: 25px;
+      height: 25px;
+      border: 1px #3C3F3E solid;
+      border-radius: 100%;
+      padding: 10px;
+      margin-left: 15px;
+      transition: background-color 0.5s;
+      &:hover{
+        cursor: pointer;
+        background-color: $red;
+      }
+    }
+    p{
+      margin-left: 15px;
+    }
+  }
+
+
+
+}
+
+
+@media only screen and (max-width: 1290px) {
+
+  #rooms_rooms{
+
+    grid-template-columns: 210px 210px 210px !important;
+    grid-column-gap: 8% !important;
+
+  }
+
+  #rooms_nav{
+    margin-top: 150px;
+    margin-bottom: 60px !important;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  #rooms_rooms{
+
+    grid-template-columns: 125px 125px 125px 125px !important;
+    grid-column-gap: 7% !important;
+
+    .room_card {
+      min-width: 125px !important;
+      width: 125px !important;
+      height: 225px !important;
+      padding-left: 10px;
+      justify-content: space-around !important;
+
+
+      .room_card_difficulty{
+        margin-top: 20% !important;
+        i{
+          font-size: $smallerTextMobile2;
+        }
+      }
+
+      .room_card_name{
+        font-size: 18px !important;
+      }
+
+      .room_card_infos{
+        flex-direction: column;
+        font-size: 10px !important;
+        div {
+          i {
+            margin-right: 5px;
+            position: relative;
+            top: 4px;
+          }
+
+          p {
+            margin-right: 15px;
+            color: #3C3F3E;
+            font-weight: bold;
+          }
+        }
+      }
+
+
+    }
+
+  }
+
+}
+
+
+@media only screen and (max-width: 640px) {
+  #rooms_header{
+    background-position: top !important;
+    background-size: 150%;
+    height: 140px;
+    h1{
+      font-size: 45px;
+    }
+  }
+
+
+
+  #rooms_body{
+    #rooms_Tris{
+      flex-direction: column;
+      align-items: center;
+      label{
+        text-align: center;
+        width: 50%;
+        margin: 40px 0 0 0;
+      }
+      #all-box + label div,
+      #easy-box + label div,
+      #normal-box + label div,
+      #hard-box + label div {
+        margin: 15px 10px 15px 10px;
+      }
+    }
+  }
+
+  #rooms_rooms{
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    .room_card {
+      min-width: 90% !important;
+      height: 550px !important;
+      padding: 0!important;
+      margin-bottom: 35px;
+      justify-content: end !important;
+      .room_card_difficulty{
+        margin-bottom: 25px;
+        margin-left: 25px;
+        i{
+          font-size: 16px !important;
+        }
+      }
+
+      .room_card_name{
+        margin-bottom: 25px;
+        margin-left: 25px;
+      }
+
+      .room_card_infos{
+        flex-direction: row;
+        margin-bottom: 25px;
+        margin-left: 25px;
+      }
+
+    }
+
+  }
+
+  #rooms_nav{
+    margin-top: 50px;
+  }
+
+
+
+}

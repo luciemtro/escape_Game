@@ -1,0 +1,126 @@
+[
+  {
+    "name": "Magic Imporium",
+    "players": [2, 3],
+    "minutes": 60,
+    "location": "Liége",
+    "difficulty": 3,
+    "phone": "+1 800 900 1248",
+    "email": "SUPPORT@ESCAPIUM.COM",
+    "skype": "ESCAPIUM",
+    "photos": [
+      "../images/gallery/slide-2.jpg",
+      "../images/gallery/slide-4.jpg",
+      "../images/gallery/room-9.jpg"
+    ]
+  },
+  {
+    "name": "The Cure",
+    "players": [2, 3],
+    "minutes": 60,
+    "location": "Hasselt",
+    "difficulty": 4,
+    "phone": "+1 800 900 1248",
+    "email": "SUPPORT@ESCAPIUM.COM",
+    "skype": "ESCAPIUM",
+    "photos": [
+      "../images/gallery/room-2.jpg",
+      "../images/gallery/room-7.jpg",
+      "../images/gallery/slide-4.jpg",
+      "..images/gallery/room-9.jpg"
+    ]
+  },
+  {
+    "name": "Burlesque",
+    "players": [3, 5],
+    "minutes": 60,
+    "location": "Namur",
+    "difficulty": 2,
+    "phone": "+1 800 900 1248",
+    "email": "SUPPORT@ESCAPIUM.COM",
+    "skype": "ESCAPIUM",
+    "photos": [
+      "../images/gallery/room-3.jpg",
+      "../images/gallery/room-7.jpg",
+      "../images/gallery/slide-4.jpg",
+      "../images/gallery/room-9.jpg"
+    ]
+  },
+  {
+    "name": "The Hospital",
+    "players": [2, 3],
+    "minutes": 60,
+    "location": "Hasselt",
+    "difficulty": 2,
+    "phone": "+1 800 900 1248",
+    "email": "SUPPORT@ESCAPIUM.COM",
+    "skype": "ESCAPIUM",
+    "photos": [
+      "../images/gallery/room-5.jpg",
+      "..images/gallery/room-7.jpg",
+      "../images/gallery/slide-4.jpg",
+      "../images/gallery/room-9.jpg"
+    ]
+  },
+  {
+    "name": "Abandoned Factory",
+    "players": [6, 8],
+    "minutes": 120,
+    "location": "Genk",
+    "difficulty": 3,
+    "phone": "+1 800 900 1248",
+    "email": "SUPPORT@ESCAPIUM.COM",
+    "skype": "ESCAPIUM",
+    "photos": [
+      "../images/gallery/gallery-1.jpg",
+      "../images/gallery/room-7.jpg",
+      "../images/gallery/slide-4.jpg",
+      "../images/gallery/room-9.jpg"
+    ]
+  },
+  {
+    "name": "Bunker 51",
+    "players": [4, 6],
+    "minutes": 60,
+    "location": "Liége",
+    "difficulty": 4,
+    "phone": "+1 800 900 1248",
+    "email": "SUPPORT@ESCAPIUM.COM",
+    "skype": "ESCAPIUM",
+    "photos": [
+      "../images/gallery/room-7.jpg",
+      "../images/gallery/slide-4.jpg",
+      "../images/gallery/room-9.jpg"
+    ]
+  },
+  {
+    "name": "The Mystical Room",
+    "players": [2, 3],
+    "minutes": 60,
+    "location": "Namur",
+    "difficulty": 2,
+    "phone": "+1 800 900 1248",
+    "email": "SUPPORT@ESCAPIUM.COM",
+    "skype": "ESCAPIUM",
+    "photos": [
+      "../images/gallery/gallery-8.jpg",
+      "../images/gallery/slide-4.jpg",
+      "../images/gallery/room-9.jpg"
+    ]
+  },
+  {
+    "name": "Back to the future",
+    "players": [3, 4],
+    "minutes": 60,
+    "location": "Genk",
+    "difficulty": 3,
+    "phone": "+1 800 900 1248",
+    "email": "SUPPORT@ESCAPIUM.COM",
+    "skype": "ESCAPIUM",
+    "photos": [
+      "../images/gallery/room-9.jpg",
+      "../images/gallery/gallery-8.jpg",
+      "../images/gallery/slide-4.jpg"
+    ]
+  }
+]

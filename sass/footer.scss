@@ -1,0 +1,156 @@
+footer{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.888), rgba(0, 0, 0, 0.888)) ,url('images/gallery/room-7.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 90px;;
+    color: $white_font;
+    h3{
+        font-family: $headings;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        font-size: 20px;
+    }
+    li{
+        opacity: 0.4;
+        font-family: $headings;
+    }
+    section{
+        p{
+            color: $white_font;
+            display: flex;
+            align-items: center;
+            font-family: $headings;
+            opacity: 0.5;
+            font-weight: 500;
+            margin: 20px 0;
+            &:after{
+                content : '';
+                display: block;
+                height: 2px;
+                width: 30px;
+                background-color: $red;
+                margin-left: 10px;
+            }
+        }
+    }
+    .footer_top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 10%; 
+        padding-bottom: 100px;
+        .address{
+            ul{
+                line-height: 25px;
+                font-size: 14px;
+                li{
+                    &:nth-child(3){
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .linksul{
+            width: 175px;
+            ul{
+                li{
+                    margin-bottom: 30px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    &:hover{
+                        list-style-type: disc;
+                        color: red;
+                        opacity: 1;
+                    }
+                    a{
+                        cursor: pointer;
+                        &:hover{
+                            color: white;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .hoursul{
+            ul{
+                line-height: 40px;
+                li{
+                    font-size: 14px;
+                    font-weight: 500;
+                    width: 210px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .social_section{
+            .social{
+                display: flex;
+                flex-wrap:wrap;
+                width: 200px;
+                i{
+                    margin: 5px;
+                    width: 40px;
+                    height: 40px;
+                    background-color: $dark_background;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    cursor: pointer;
+                    &:hover{
+                        animation: bg 1s ease;
+                        background-color: $red;
+                    }
+                    @keyframes bg{
+                        0%{
+                            background-color: white;
+                        }
+                        100%{
+                            background-color: $red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_bottom{
+        border-top: solid 1px rgba(128, 128, 128, 0.363);
+        background-color: rgba(0, 0, 0, 0.753);
+        display: flex;
+        flex-direction: column;
+        justify-content: bottom;
+        align-items: center;
+        padding-top: 30px;
+        div{
+            padding: 20px 0 40px 0;
+            font-family: $headings;
+            opacity: 0.5;
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 412px){
+    footer{
+        .footer_top{
+        gap: 0;
+        padding-left: 0;
+        section{
+            width: 85%;
+        }
+        .social{
+            width: 90%;
+        }
+        }
+        .footer_bottom{
+            div{
+                font-size: 12px ;
+            }
+        }
+    }
+}

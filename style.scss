@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@import 'sass/variables.scss';
+@import 'sass/about.scss';
+@import 'sass/footer.scss';
+@import "sass/rooms.scss";
+@import 'sass/topNav.scss';
+@import 'sass/blogs.scss';
+@import "sass/room.scss";
+@import 'sass/homepage.scss';
+@import 'sass/contacts.scss';
+
+@import 'sass/blog.scss';
